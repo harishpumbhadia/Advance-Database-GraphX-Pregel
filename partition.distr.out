@@ -1,0 +1,282 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/hvp3121/37330299
+myHadoop: Using JAVA_HOME=/lib/jvm/java
+myHadoop: Generating Hadoop configuration in directory in /home/hvp3121/cometcluster...
+myHadoop: Backing up old config dir to /home/hvp3121/cometcluster.24...
+'/home/hvp3121/cometcluster' -> '/home/hvp3121/cometcluster.24'
+myHadoop: Designating comet-06-63.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-06-63.ibnet
+comet-06-65.ibnet
+20/12/08 21:28:02 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-06-63.sdsc.edu/198.202.116.120
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/hvp3121/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_212
+************************************************************/
+20/12/08 21:28:02 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+20/12/08 21:28:02 INFO namenode.NameNode: createNameNode [-format]
+20/12/08 21:28:02 WARN common.Util: Path /scratch/hvp3121/37330299/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+20/12/08 21:28:02 WARN common.Util: Path /scratch/hvp3121/37330299/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-6c020199-2841-437e-85f9-edae8cf19bcf
+20/12/08 21:28:02 INFO namenode.FSNamesystem: No KeyProvider found.
+20/12/08 21:28:02 INFO namenode.FSNamesystem: fsLock is fair:true
+20/12/08 21:28:02 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+20/12/08 21:28:02 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: The block deletion will start around 2020 Dec 08 21:28:02
+20/12/08 21:28:02 INFO util.GSet: Computing capacity for map BlocksMap
+20/12/08 21:28:02 INFO util.GSet: VM type       = 64-bit
+20/12/08 21:28:02 INFO util.GSet: 2.0% max memory 889 MB = 17.8 MB
+20/12/08 21:28:02 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: defaultReplication         = 3
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: maxReplication             = 512
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: minReplication             = 1
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+20/12/08 21:28:02 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+20/12/08 21:28:02 INFO namenode.FSNamesystem: fsOwner             = hvp3121 (auth:SIMPLE)
+20/12/08 21:28:02 INFO namenode.FSNamesystem: supergroup          = supergroup
+20/12/08 21:28:02 INFO namenode.FSNamesystem: isPermissionEnabled = true
+20/12/08 21:28:02 INFO namenode.FSNamesystem: HA Enabled: false
+20/12/08 21:28:02 INFO namenode.FSNamesystem: Append Enabled: true
+20/12/08 21:28:03 INFO util.GSet: Computing capacity for map INodeMap
+20/12/08 21:28:03 INFO util.GSet: VM type       = 64-bit
+20/12/08 21:28:03 INFO util.GSet: 1.0% max memory 889 MB = 8.9 MB
+20/12/08 21:28:03 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+20/12/08 21:28:03 INFO namenode.NameNode: Caching file names occuring more than 10 times
+20/12/08 21:28:03 INFO util.GSet: Computing capacity for map cachedBlocks
+20/12/08 21:28:03 INFO util.GSet: VM type       = 64-bit
+20/12/08 21:28:03 INFO util.GSet: 0.25% max memory 889 MB = 2.2 MB
+20/12/08 21:28:03 INFO util.GSet: capacity      = 2^18 = 262144 entries
+20/12/08 21:28:03 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+20/12/08 21:28:03 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+20/12/08 21:28:03 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+20/12/08 21:28:03 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+20/12/08 21:28:03 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+20/12/08 21:28:03 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+20/12/08 21:28:03 INFO util.GSet: VM type       = 64-bit
+20/12/08 21:28:03 INFO util.GSet: 0.029999999329447746% max memory 889 MB = 273.1 KB
+20/12/08 21:28:03 INFO util.GSet: capacity      = 2^15 = 32768 entries
+20/12/08 21:28:03 INFO namenode.NNConf: ACLs enabled? false
+20/12/08 21:28:03 INFO namenode.NNConf: XAttrs enabled? true
+20/12/08 21:28:03 INFO namenode.NNConf: Maximum size of an xattr: 16384
+20/12/08 21:28:03 INFO namenode.FSImage: Allocated new BlockPoolId: BP-602034756-198.202.116.120-1607491683044
+20/12/08 21:28:03 INFO common.Storage: Storage directory /scratch/hvp3121/37330299/namenode_data has been successfully formatted.
+20/12/08 21:28:03 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+20/12/08 21:28:03 INFO util.ExitUtil: Exiting with status 0
+20/12/08 21:28:03 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-06-63.sdsc.edu/198.202.116.120
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/hvp3121/cometcluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/hvp3121/cometcluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [comet-06-63.ibnet]
+comet-06-63.ibnet: starting namenode, logging to /scratch/hvp3121/37330299/logs/hadoop-hvp3121-namenode-comet-06-63.sdsc.edu.out
+comet-06-63.ibnet: starting datanode, logging to /scratch/hvp3121/37330299/logs/hadoop-hvp3121-datanode-comet-06-63.sdsc.edu.out
+comet-06-65.ibnet: starting datanode, logging to /scratch/hvp3121/37330299/logs/hadoop-hvp3121-datanode-comet-06-65.sdsc.edu.out
+Starting secondary namenodes [comet-06-63.ibnet]
+comet-06-63.ibnet: starting secondarynamenode, logging to /scratch/hvp3121/37330299/logs/hadoop-hvp3121-secondarynamenode-comet-06-63.sdsc.edu.out
+starting yarn daemons
+starting resourcemanager, logging to /scratch/hvp3121/37330299/logs/yarn-hvp3121-resourcemanager-comet-06-63.out
+comet-06-65.ibnet: starting nodemanager, logging to /scratch/hvp3121/37330299/logs/yarn-hvp3121-nodemanager-comet-06-65.sdsc.edu.out
+comet-06-63.ibnet: starting nodemanager, logging to /scratch/hvp3121/37330299/logs/yarn-hvp3121-nodemanager-comet-06-63.sdsc.edu.out
+mySpark: Using /home/hvp3121/cometcluster/spark/slaves as our slaves file
+mySpark: Reading in /home/hvp3121/cometcluster/spark/spark-env.sh as our slaves file
+starting org.apache.spark.deploy.master.Master, logging to /scratch/hvp3121/37330299/logs/spark-hvp3121-org.apache.spark.deploy.master.Master-1-comet-06-63.out
+mySpark: Starting worker on comet-06-63.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/hvp3121/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-06-63.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/hvp3121/37330299/logs/spark-hvp3121-org.apache.spark.deploy.worker.Worker-1-comet-06-63.sdsc.edu.out
+failed to launch org.apache.spark.deploy.worker.Worker:
+  /opt/spark/1.5.2/sbin/../bin/spark-class: line 77: /lib/jvm.java/bin/java: No such file or directory
+full log in /scratch/hvp3121/37330299/logs/spark-hvp3121-org.apache.spark.deploy.worker.Worker-1-comet-06-63.sdsc.edu.out
+mySpark: Starting worker on comet-06-65.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/hvp3121/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-06-63.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/hvp3121/37330299/logs/spark-hvp3121-org.apache.spark.deploy.worker.Worker-1-comet-06-65.sdsc.edu.out
+failed to launch org.apache.spark.deploy.worker.Worker:
+  /opt/spark/1.5.2/sbin/../bin/spark-class: line 77: /lib/jvm.java/bin/java: No such file or directory
+full log in /scratch/hvp3121/37330299/logs/spark-hvp3121-org.apache.spark.deploy.worker.Worker-1-comet-06-65.sdsc.edu.out
+20/12/08 21:28:34 INFO spark.SparkContext: Running Spark version 1.5.2
+20/12/08 21:28:35 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/12/08 21:28:35 INFO spark.SecurityManager: Changing view acls to: hvp3121
+20/12/08 21:28:35 INFO spark.SecurityManager: Changing modify acls to: hvp3121
+20/12/08 21:28:35 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(hvp3121); users with modify permissions: Set(hvp3121)
+20/12/08 21:28:35 INFO slf4j.Slf4jLogger: Slf4jLogger started
+20/12/08 21:28:35 INFO Remoting: Starting remoting
+20/12/08 21:28:35 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.22.254.88:39401]
+20/12/08 21:28:35 INFO util.Utils: Successfully started service 'sparkDriver' on port 39401.
+20/12/08 21:28:35 INFO spark.SparkEnv: Registering MapOutputTracker
+20/12/08 21:28:35 INFO spark.SparkEnv: Registering BlockManagerMaster
+20/12/08 21:28:35 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-4b6a326f-5f5e-4049-8ee0-29c179e0f509
+20/12/08 21:28:35 INFO storage.MemoryStore: MemoryStore started with capacity 530.0 MB
+20/12/08 21:28:35 INFO spark.HttpFileServer: HTTP File server directory is /tmp/spark-c117ac7a-4729-4f11-86d6-e2144ee0c746/httpd-03ec49a0-cc1a-4129-93b1-333b15985b92
+20/12/08 21:28:35 INFO spark.HttpServer: Starting HTTP Server
+20/12/08 21:28:35 INFO server.Server: jetty-8.y.z-SNAPSHOT
+20/12/08 21:28:35 INFO server.AbstractConnector: Started SocketConnector@0.0.0.0:44738
+20/12/08 21:28:35 INFO util.Utils: Successfully started service 'HTTP file server' on port 44738.
+20/12/08 21:28:35 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+20/12/08 21:28:35 INFO server.Server: jetty-8.y.z-SNAPSHOT
+20/12/08 21:28:35 INFO server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+20/12/08 21:28:35 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+20/12/08 21:28:35 INFO ui.SparkUI: Started SparkUI at http://10.22.254.88:4040
+20/12/08 21:28:35 INFO spark.SparkContext: Added JAR file:/home/hvp3121/project8/partition.jar at http://10.22.254.88:44738/jars/partition.jar with timestamp 1607491715948
+20/12/08 21:28:35 WARN metrics.MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+20/12/08 21:28:35 INFO client.AppClient$ClientEndpoint: Connecting to master spark://comet-06-63.ibnet:7077...
+20/12/08 21:28:36 INFO cluster.SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20201208212836-0000
+20/12/08 21:28:36 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34178.
+20/12/08 21:28:36 INFO netty.NettyBlockTransferService: Server created on 34178
+20/12/08 21:28:36 INFO storage.BlockManagerMaster: Trying to register BlockManager
+20/12/08 21:28:36 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.254.88:34178 with 530.0 MB RAM, BlockManagerId(driver, 10.22.254.88, 34178)
+20/12/08 21:28:36 INFO storage.BlockManagerMaster: Registered BlockManager
+20/12/08 21:28:36 INFO cluster.SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+20/12/08 21:28:36 INFO storage.MemoryStore: ensureFreeSpace(120176) called with curMem=0, maxMem=555755765
+20/12/08 21:28:36 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.4 KB, free 529.9 MB)
+20/12/08 21:28:36 INFO storage.MemoryStore: ensureFreeSpace(12887) called with curMem=120176, maxMem=555755765
+20/12/08 21:28:36 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.6 KB, free 529.9 MB)
+20/12/08 21:28:36 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.254.88:34178 (size: 12.6 KB, free: 530.0 MB)
+20/12/08 21:28:36 INFO spark.SparkContext: Created broadcast 0 from textFile at Partition.scala:13
+20/12/08 21:28:36 INFO storage.MemoryStore: ensureFreeSpace(120216) called with curMem=133063, maxMem=555755765
+20/12/08 21:28:36 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 117.4 KB, free 529.8 MB)
+20/12/08 21:28:36 INFO storage.MemoryStore: ensureFreeSpace(12887) called with curMem=253279, maxMem=555755765
+20/12/08 21:28:36 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 12.6 KB, free 529.8 MB)
+20/12/08 21:28:36 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.22.254.88:34178 (size: 12.6 KB, free: 530.0 MB)
+20/12/08 21:28:36 INFO spark.SparkContext: Created broadcast 1 from textFile at Partition.scala:26
+20/12/08 21:28:37 INFO mapred.FileInputFormat: Total input paths to process : 1
+20/12/08 21:28:37 INFO spark.SparkContext: Starting job: collect at Partition.scala:37
+20/12/08 21:28:37 INFO scheduler.DAGScheduler: Got job 0 (collect at Partition.scala:37) with 2 output partitions
+20/12/08 21:28:37 INFO scheduler.DAGScheduler: Final stage: ResultStage 0(collect at Partition.scala:37)
+20/12/08 21:28:37 INFO scheduler.DAGScheduler: Parents of final stage: List()
+20/12/08 21:28:37 INFO scheduler.DAGScheduler: Missing parents: List()
+20/12/08 21:28:37 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[8] at filter at Partition.scala:37), which has no missing parents
+20/12/08 21:28:37 INFO storage.MemoryStore: ensureFreeSpace(3632) called with curMem=266166, maxMem=555755765
+20/12/08 21:28:37 INFO storage.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 3.5 KB, free 529.8 MB)
+20/12/08 21:28:37 INFO storage.MemoryStore: ensureFreeSpace(2094) called with curMem=269798, maxMem=555755765
+20/12/08 21:28:37 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.0 KB, free 529.8 MB)
+20/12/08 21:28:37 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.254.88:34178 (size: 2.0 KB, free: 530.0 MB)
+20/12/08 21:28:37 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:861
+20/12/08 21:28:37 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[8] at filter at Partition.scala:37)
+20/12/08 21:28:37 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+20/12/08 21:28:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:29:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:29:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:29:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:29:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:30:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:30:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:30:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:30:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:31:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:31:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:31:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:31:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:32:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:32:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:32:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:32:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:33:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:33:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:33:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:33:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:34:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:34:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:34:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:34:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:35:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:35:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:35:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:35:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:36:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:36:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:36:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:36:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:37:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:37:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:37:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:37:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:38:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:38:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:38:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:38:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:39:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:39:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:39:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:39:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:40:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:40:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:40:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:40:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:41:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:41:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:41:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:41:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:42:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:42:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:42:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:42:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:43:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:43:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:43:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:43:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:44:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:44:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:44:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:44:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:45:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:45:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:45:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:45:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:46:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:46:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:46:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:46:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:47:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:47:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:47:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:47:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:48:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:48:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:48:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:48:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:49:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:49:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:49:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:49:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:50:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:50:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:50:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:50:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:51:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:51:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:51:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:51:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:52:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:52:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:52:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:52:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:53:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:53:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:53:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:53:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:54:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:54:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:54:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:54:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:55:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:55:22 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:55:37 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:55:52 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/12/08 21:56:07 WARN scheduler.TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
